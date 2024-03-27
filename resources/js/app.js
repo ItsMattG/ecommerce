@@ -3,6 +3,8 @@ import { createApp, h } from 'vue'
 import { createInertiaApp } from '@inertiajs/vue3'
 import PrimeVue from 'primevue/config';
 import 'primevue/resources/themes/lara-light-green/theme.css'
+import 'primeicons/primeicons.css'
+
 
 createInertiaApp({
   resolve: name => {
