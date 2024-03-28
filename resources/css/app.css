@@ -394,8 +394,8 @@ body {
 
 .checkbox-label {
   background-color: var(--secondary-800) !important;
-  width: 58px;
-  height: 26px;
+  width: 52px;
+  height: 22px;
   border-radius: 50px;
   position: relative;
   padding: 5px;
@@ -419,14 +419,14 @@ body {
 
 .checkbox-label .ball {
   background-color: var(--background-50) !important;
-  width: 22px;
-  height: 22px;
+  width: 16px;
+  height: 16px;
   position: absolute;
-  left: 3px;
-  top: 2px;
+  left: 5px;
+  top: 3px;
   border-radius: 50%;
 }
 
 .checkbox:checked + .checkbox-label .ball {
-  transform: translateX(31px);
+  transform: translateX(27px);
 }
