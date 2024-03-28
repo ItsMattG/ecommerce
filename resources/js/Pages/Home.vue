@@ -1,57 +1,45 @@
 <template>
-	<nav class="flex items-center justify-between bg-gray-800 py-4 px-6">
-	  <!-- Far Left -->
-	  <div class="flex items-center justify-center w-1/3">
-		<div class="flex items-center">
-		  <span class="text-white text-lg font-bold">Swifty</span>
+	<navbar></navbar>
+	<div class="main">
+		<div class="hero">
+			<div class="hero-container">
+
+				<!-- Left side: Title and Subtitle -->
+				<div class="hero-content">
+					<h1 class="hero-title">Express Yourself with <span class="color-effect">Custom Tees</span></h1>
+					<p class="hero-subtitle">Unleash Your Style with Trendy, One-of-a-Kind Tees</p>
+					<div class="card flex justify-content-center">
+						<Button label="Explore Now" class="hero-button" />
+					</div>
+				</div>
+
+				<!-- Right side: Hero Image -->
+				<div class="hero-image">
+					<img src="../../images/t_shirt.jpeg" alt="Hero Image">
+				</div>
+
+			</div>
 		</div>
-	  </div>
+	</div>
+</template>
 
-	  <!-- Center -->
-	  <div class="flex items-center justify-evenly w-1/3">
-		<div class="flex items-center space-x-6">
-		  <a href="#" class="text-gray-300 hover:text-white px-3 py-2 flex-grow">Home</a>
-		  <a href="#" class="text-gray-300 hover:text-white px-3 py-2 flex-grow">Women</a>
-		  <a href="#" class="text-gray-300 hover:text-white px-3 py-2 flex-grow">Men</a>
-		  <a href="#" class="text-gray-300 hover:text-white px-3 py-2 flex-grow">Kids</a>
-		</div>
-	  </div>
-
-	  <!-- Far Right -->
-	  <div class="flex items-center justify-center w-1/3">
-		<div class="flex items-center">
-		  <button class="text-gray-300 hover:text-white px-3 py-2 focus:outline-none">
-			<i class="pi pi-shopping-cart"></i>
-		  </button>
-		  <button class="text-gray-300 hover:text-white px-3 py-2 focus:outline-none">
-			<i class="pi pi-user"></i>
-		  </button>
-		</div>
-	  </div>
-	</nav>
-  </template>
-
-  <script>
-
-  export default {
+<script>
+import Button from 'primevue/button';
+import Navbar from '../Components/Navbar.vue';
+export default {
 	name: 'Home',
 	components: {
+		Button,
+		Navbar
 	},
 	data() {
-	  return {
-	  };
+		return {
+		};
+	},
+	watch: {
+
 	},
 	methods: {
 	},
-  };
-  </script>
-
-  <style scoped>
-  .slide-enter-active, .slide-leave-active {
-	transition: transform 0.3s ease;
-  }
-
-  .slide-enter, .slide-leave-to {
-	transform: translateX(-100%);
-  }
-  </style>
+};
+</script>

@@ -15,6 +15,6 @@ createInertiaApp({
     createApp({ render: () => h(App, props) })
       .use(plugin)
 	  .use(PrimeVue)
-      .mount(el)
+      .mount('body')
   },
 })
