@@ -18,6 +18,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="wave">
+
+		</div>
 		<div class="main-two">
 			<div class="hero">
 				<div class="hero-container">
@@ -39,6 +42,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="wave">
+
+</div>
 		<div class="main-three">
 			<div class="hero">
 				<div class="hero-container">
@@ -60,6 +66,9 @@
 				</div>
 			</div>
 		</div>
+		<div class="wave">
+
+</div>
 		<div class="main-two">
 			<div class="hero">
 				<div class="hero-container">
