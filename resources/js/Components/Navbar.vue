@@ -51,7 +51,6 @@ export default {
 	},
 	watch: {
 		isDarkTheme(newValue) {
-			console.log('asdasd')
 			const themeChangeDiv = document.getElementById("themeChange");
 			if (themeChangeDiv) {
 

@@ -311,6 +311,18 @@ width: 60%;
 	height: 100vh;
   }
 
+  @media screen and (max-width: 1025px) {
+	.main-one {
+		margin: 5rem 0;
+	}
+	.main-two {
+		height: 115vh !important;
+	}
+	.main-three {
+		height: 115vh !important;
+	}
+  }
+
   .hero {
 	display: flex;
     flex-direction: row;
