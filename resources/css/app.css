@@ -627,5 +627,114 @@ body {
 }
 
 .custom-shape-divider-two-top-1700550481 .shape-fill {
-	fill: var(--accent) !important;;
+	fill: var(--accent) !important;
+}
+
+.faq-section {
+	display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 2em;
+    width: 100%;
+    position: relative;
+	padding: 0 12%;
+	height: 95vh;
+	background-color: var(--accent);
+	padding-top: 10%;
+}
+
+.part-heading {
+	display: flex;
+    flex-direction: column;
+    gap: 1em;
+	align-items: flex-start;
+}
+
+.faq-list {
+	color: black;
+	width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 2em;
+    position: relative;
+}
+
+
+.p-accordion-header a {
+	display: flex;
+	justify-content: space-between;
+	color: black;
+}
+
+
+.p-accordion-header svg {
+	order: 2;
+}
+
+.p-accordion-header span {
+	order: 1;
+}
+
+.p-accordion-header a {
+	color: black;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.p-accordion-content {
+	padding-top: 10px;
+	color: black;
+	background-color: rgba(255, 255, 255, 0);
+}
+
+.p-accordion-tab-active {
+	background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.p-accordion-tab {
+	padding: 20px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.2);
+	border: 2px solid white;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.faq {
+	border: none;
+    outline: none;
+    text-align: left;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+    gap: 10px;
+}
+
+.faq-a {
+	position: relative;
+    font-size: var(--p);
+    padding: 0 20px;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-in-out;
+    border-radius: 0 0 var(--border05) var(--border05);
+}
+
+h2 {
+	font-size: 40px;
+    letter-spacing: 0;
+    font-weight: 700;
+	font-family: 'Bingo', sans-serif;
+	letter-spacing: 2px;
+}
+
+h5 {
+	font-size: 20px;
+	font-family: sans-serif;
+	letter-spacing: 1px;
 }

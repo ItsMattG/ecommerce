@@ -87,41 +87,53 @@
                 </svg>
             </div>
 		</div>
-		<div class="main-two">
-			<div class="hero">
-				<div class="hero-container">
-
-					<!-- Left side: Title and Subtitle -->
-					<div class="hero-content">
-						<h1 class="hero-title">Express Yourself with <span class="color-effect">Custom Tees</span></h1>
-						<p class="hero-subtitle">Unleash Your Style with Trendy, One-of-a-Kind Tees</p>
-						<div class="card flex justify-content-center">
-							<Button label="Explore Now" class="hero-button" />
-						</div>
-					</div>
-
-					<!-- Right side: Hero Image -->
-					<div class="hero-image">
-						<img src="../../images/t_shirt.jpeg" alt="Hero Image">
-					</div>
-
-				</div>
+		<div class="faq-section" id="faq" data-astro-cid-j7pv25f6="">
+			<div class="part-heading left" data-astro-cid-j7pv25f6="">
+				<h2 data-astro-cid-j7pv25f6="">FAQ</h2>
+				<h5 data-astro-cid-j7pv25f6="">Answers to some questions you might have.</h5>
 			</div>
+			<Accordion class="faq-list" :activeIndex="0">
+				<AccordionTab header="How many colours should I choose?">
+					<p class="m-0">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</AccordionTab>
+				<AccordionTab header="How does the constract checker work?">
+					<p class="m-0">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+						ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+					</p>
+				</AccordionTab>
+				<AccordionTab header="What does the hero image represent?">
+					<p class="m-0">
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
+						officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+					</p>
+				</AccordionTab>
+			</Accordion>
 		</div>
+
 	</div>
 </template>
 
 <script>
 import Button from 'primevue/button';
 import Navbar from '../Components/Navbar.vue';
+import Accordion from 'primevue/accordion';
+import AccordionTab from 'primevue/accordiontab';
+
 export default {
 	name: 'Home',
 	components: {
 		Button,
-		Navbar
+		Navbar,
+		Accordion,
+		AccordionTab
 	},
 	data() {
 		return {
+			activeIndex: 0,
 		};
 	},
 	watch: {
@@ -129,5 +141,9 @@ export default {
 	},
 	methods: {
 	},
+	mounted() {
+
+
+	}
 };
 </script>
