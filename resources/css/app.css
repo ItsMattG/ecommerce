@@ -307,9 +307,17 @@ width: 60%;
 
   .main-one {
     display: flex;
-	padding: 0 12%;
 	height: 100vh;
   }
+
+  @media screen and (min-width: 800px) {
+	.main-one,
+	.main-two,
+	.main-three,
+	.faq-section {
+		padding: 0 12%;
+	  }
+	}
 
   @media screen and (max-width: 1025px) {
 	.main-one {
@@ -581,14 +589,14 @@ body {
 
   .main-two {
    	display: flex;
-	padding: 0 12%;
 	height: 95vh;
 	background-color: var(--accent);
   }
 
+
+
   .main-three {
 	display: flex;
-	padding: 0 12%;
 	height: 96vh;
 	background-color: var(--background) !important;
   }
@@ -638,10 +646,9 @@ body {
     gap: 2em;
     width: 100%;
     position: relative;
-	padding: 0 12%;
 	height: 95vh;
 	background-color: var(--accent);
-	padding-top: 10%;
+	padding-top: 9%;
 }
 
 .part-heading {
