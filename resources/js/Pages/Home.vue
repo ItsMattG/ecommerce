@@ -92,23 +92,25 @@
 				<h2 data-astro-cid-j7pv25f6="">FAQ</h2>
 				<h5 data-astro-cid-j7pv25f6="">Answers to some questions you might have.</h5>
 			</div>
-			<Accordion class="faq-list" :activeIndex="0">
-				<AccordionTab header="How many colours should I choose?">
+			<Accordion class="faq-list" :activeIndex="activeIndex">
+				<AccordionTab header="Where do you source your t-shirts?">
 					<p class="m-0">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+						We pride ourselves on the quality of our t-shirts, which is why we partner with a local Melbourne manufacturer renowned for their commitment to excellence. Our t-shirts are crafted using premium 100% cotton material, ensuring comfort and durability with every wear.
 					</p>
 				</AccordionTab>
-				<AccordionTab header="How does the constract checker work?">
+				<AccordionTab header="Where do you get your t-shirt designs?">
 					<p class="m-0">
-						Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-						ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Consectetur, adipisci velit, sed quia non numquam eius modi.
+						At Swifty, we believe in supporting local talent and fostering creativity within our community. That's why we collaborate with talented Australian artists, paying them a commission for their unique and original designs. When you purchase from us, you're not just getting a t-shirt – you're wearing a piece of art.
 					</p>
 				</AccordionTab>
-				<AccordionTab header="What does the hero image represent?">
+				<AccordionTab header="Can I customise t-shirts with my own design or logo?">
 					<p class="m-0">
-						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-						officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus.
+						Absolutely! We understand the importance of self-expression and personalization, which is why we offer custom design options. Whether it's your own artwork, logo, or a special message, simply complete our contact form, and our dedicated team will work with you to bring your vision to life on our premium t-shirts.
+					</p>
+				</AccordionTab>
+				<AccordionTab header="What if I encounter any issues with my custom t-shirt order?">
+					<p class="m-0">
+						Your satisfaction is paramount to us. Should you encounter any concerns or issues with your order – whether it's regarding sizing, print quality, or anything else – please reach out to our attentive customer support team. We're here to promptly address your inquiries and ensure that you're not just satisfied, but truly delighted with your purchase.
 					</p>
 				</AccordionTab>
 			</Accordion>
@@ -133,7 +135,7 @@ export default {
 	},
 	data() {
 		return {
-			activeIndex: 0,
+			activeIndex: '',
 		};
 	},
 	watch: {
