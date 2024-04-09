@@ -28,25 +28,65 @@
             </div>
 		</div>
 		<div class="main-two">
-			<div class="hero">
-				<div class="hero-container">
+				<div class="hero-container-two-test">
 
-					<!-- Left side: Title and Subtitle -->
-					<div class="hero-content">
-						<h1 class="hero-title">Express Yourself with <span class="color-effect">Custom Tees</span></h1>
-						<p class="hero-subtitle">Unleash Your Style with Trendy, One-of-a-Kind Tees</p>
-						<div class="card flex justify-content-center">
-							<Button label="Explore Now" class="hero-button" />
+					<div class="hero-content-two-test">
+						<div class="printing-container">
+							<h2>The Most Ethical <br/> Custom T-Shirt Printing</h2>
+						</div>
+						<div class="image-wrapper-two">
+							<img class="ecoImagesTwo" src="../../images/world.svg" alt="Description of the SVG">
+							<h4 class="for-the-planet-h4">FOR THE <br/> <span class="stretch-word">PLANET</span></h4>
 						</div>
 					</div>
 
-					<!-- Right side: Hero Image -->
-					<div class="hero-image">
-						<img src="../../images/t_shirt.jpeg" alt="Hero Image">
-					</div>
+					<div class="iconRow">
+						<div class="image-wrapper">
+							<div class="wrapper-two">
+								<img class="ecoImages" src="../../images/kangaroo.svg" alt="Description of the SVG">
+							</div>
+							<div class="text-wrapper">
+								<h4>Australian Made</h4>
+							</div>
+						</div>
 
+						<div class="image-wrapper">
+							<div class="wrapper-two">
+								<img class="ecoImages" src="../../images/eco-friendly.svg" alt="Description of the SVG">
+							</div>
+							<div class="text-wrapper">
+								<h4>Eco-Friendly</h4>
+							</div>
+						</div>
+
+						<div class="image-wrapper">
+							<div class="wrapper-two">
+								<img class="ecoImages" src="../../images/green-energy-leaf.svg" alt="Description of the SVG">
+							</div>
+							<div class="text-wrapper">
+								<h4>Green Energy</h4>
+							</div>
+						</div>
+
+						<div class="image-wrapper">
+							<div class="wrapper-two">
+								<img class="ecoImages" src="../../images/recycle-shopping-bag.svg" alt="Description of the SVG">
+							</div>
+							<div class="text-wrapper">
+								<h4>Recycle</h4>
+							</div>
+						</div>
+
+						<div class="image-wrapper">
+							<div class="wrapper-two">
+								<img class="ecoImages" src="../../images/renewable-energy-wind-power.svg" alt="Description of the SVG">
+							</div>
+							<div class="text-wrapper">
+								<h4>Renewable Energy</h4>
+							</div>
+						</div>
+					</div>
 				</div>
-			</div>
 		</div>
 		<div class="wave-two">
 			<div class="custom-shape-divider-two-top-1700550481">
@@ -59,20 +99,31 @@
 		</div>
 		<div class="main-three">
 			<div class="hero">
-				<div class="hero-container">
+				<div class="hero-container-two">
 
-					<!-- Left side: Title and Subtitle -->
-					<div class="hero-content">
-						<h1 class="hero-title">Express Yourself with <span class="color-effect">Custom Tees</span></h1>
-						<p class="hero-subtitle">Unleash Your Style with Trendy, One-of-a-Kind Tees</p>
-						<div class="card flex justify-content-center">
-							<Button label="Explore Now" class="hero-button" />
+					<div class="hero-content-two">
+						<div class="container-h5-one">
+							<h5 class="main-three-h5"><i class="pi pi-bolt"></i>New Collection 2024</h5>
+						</div>
+						<h2 class="main-three-h2">
+							<span class="h2-span-one">GET READY TO</span>
+							<br/>
+							<span class="h2-span-two">WOW THE CROWD!</span>
+						</h2>
+						<div class="container-h5-two">
+							<h5 class="main-three-h5-two">Dive into a world of possibilities with our premium 100% cotton tees. Express yourself with classic crewnecks or sassy v-necks in a rainbow of colors. Unleash your unique style and rock your fashionista flair!</h5>
 						</div>
 					</div>
 
-					<!-- Right side: Hero Image -->
-					<div class="hero-image">
-						<img src="../../images/t_shirt.jpeg" alt="Hero Image">
+					<div id="grid" class="grid-container">
+						<div id="image1" class="griditem image1">
+						</div>
+
+						<div id="image2" class="griditem image2">
+						</div>
+
+						<div id="image3" class="griditem image3">
+						</div>
 					</div>
 
 				</div>
@@ -87,10 +138,10 @@
                 </svg>
             </div>
 		</div>
-		<div class="faq-section" id="faq" data-astro-cid-j7pv25f6="">
-			<div class="part-heading left" data-astro-cid-j7pv25f6="">
-				<h2 data-astro-cid-j7pv25f6="">FAQ</h2>
-				<h5 data-astro-cid-j7pv25f6="">Answers to some questions you might have.</h5>
+		<div class="faq-section" id="faq">
+			<div class="part-heading left">
+				<h2>FAQ</h2>
+				<h5>Answers to some questions you might have.</h5>
 			</div>
 			<Accordion class="faq-list" :activeIndex="activeIndex">
 				<AccordionTab header="Where do you source your t-shirts?">

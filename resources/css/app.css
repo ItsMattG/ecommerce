@@ -221,16 +221,124 @@
 	justify-content: center;
   }
 
+.hero-container-two {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 3em;
+  }
+
+.hero-container-two-test {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	flex-direction: column;
+	gap: 3em;
+	width: 100%;
+	height: 80%;
+  }
+
+  .iconRow::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px; /* Thickness of the horizontal line */
+    background-color: var(--text) !important; /* Color of the horizontal line */
+	transform: translateY(-50%)
+}
+
+.for-the-planet-h4 {
+	line-height: 16px;
+    font-weight: 700;
+	font-family: 'Bingo', sans-serif;
+	letter-spacing: 2px;
+	height: 20%;
+	color: var(--text) !important;
+}
+
+.image-wrapper-two {
+	display: flex;
+	width: 40%;
+	justify-content: center;
+	align-items: center;
+}
+
+.image-wrapper {
+    position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+}
+
+
+
+  .iconRow {
+	width: 100%;
+	position: relative;
+	gap: 10em;
+	height: 37%;
+	display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-column-gap: 10px; /* Adjust the gap between icons */
+    position: relative;
+  }
+
+  .wrapper-two {
+	float: left;
+	width: 100px; /* Adjust the size of the container */
+    height: 100px; /* Adjust the size of the container */
+    overflow: hidden; /* Hide the overflow of the image */
+    border-radius: 50%; /* Make the container a circle */
+	border: 2px solid var(--accent-800) !important;
+	shape-outside: circle();
+}
+
+
+  .iconRow .image-wrapper:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 1px; /* Thickness of the vertical line */
+    height: 100%;
+    background-color: var(--text) !important; /* Color of the vertical line */
+}
+
   /* Left side content styles */
   .hero-content {
 	max-width: 50%;
 	margin-right: 2rem; /* Add margin to the right to position text slightly to the left */
 	text-align: left; /* Align text to the right */
-display: flex;
-flex-direction: column;
-justify-content: center;
-gap: 2rem;
-width: 60%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+	width: 60%;
+  }
+
+  /* Left side content styles */
+  .hero-content-two {
+	max-width: 50%;
+	margin-left: 2rem; /* Add margin to the right to position text slightly to the left */
+	text-align: left; /* Align text to the right */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 2rem;
+	width: 100%;
+  }
+
+  /* Left side content styles */
+  .hero-content-two-test {
+	text-align: left; /* Align text to the right */
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	width: 100%;
   }
 
   .hero-title {
@@ -249,7 +357,7 @@ width: 60%;
 
   /* Right side image styles */
   .hero-image {
-	margin-left: 2rem; /* Add margin to the left to position image slightly to the right */
+	margin-left: 2rem;
 	margin-right: 2rem;
 	position: relative;
 	width: 40%;
@@ -456,6 +564,11 @@ body {
 	color: var(--text) !important;
 }
 
+.pi-bolt {
+	color: var(--accent-600);
+	margin-right: 8px;
+}
+
 .pi-moon {color: #000000;}
 
 .pi-sun {color: #ffee02;}
@@ -591,6 +704,8 @@ body {
    	display: flex;
 	height: 95vh;
 	background-color: var(--accent);
+	width: 100%;
+	align-items: center;
   }
 
 
@@ -651,6 +766,11 @@ body {
 	padding-top: 9%;
 }
 
+.part-heading h2,
+.part-heading h5 {
+	color: var(--text) !important;
+}
+
 .part-heading {
 	display: flex;
     flex-direction: column;
@@ -659,7 +779,7 @@ body {
 }
 
 .faq-list {
-	color: black;
+	color: var(--text) !important;
 	width: 60%;
     display: flex;
     flex-direction: column;
@@ -673,7 +793,7 @@ body {
 .p-accordion-header a {
 	display: flex;
 	justify-content: space-between;
-	color: black;
+	color: var(--text) !important;
 }
 
 
@@ -686,13 +806,13 @@ body {
 }
 
 .p-accordion-header a {
-	color: black;
+	color: var(--text) !important;
 	background-color: rgba(255, 255, 255, 0);
 }
 
 .p-accordion-content {
 	padding-top: 10px;
-	color: black;
+	color: var(--text) !important;
 	background-color: rgba(255, 255, 255, 0);
 }
 
@@ -704,7 +824,7 @@ body {
 	padding: 20px;
 	border-radius: 20px;
 	background-color: rgba(255, 255, 255, 0.2);
-	border: 2px solid white;
+	border: 2px solid var(--accent-50);
 	box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
@@ -746,3 +866,164 @@ h5 {
 	font-family: sans-serif;
 	letter-spacing: 1px;
 }
+
+
+
+
+  p:hover {
+	cursor: default;
+  }
+
+  .grid-container {
+	padding: 0.5vw;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 16vw;
+	grid-gap: 1vw; /* optional gutter , use "vw" instead of "px" to keep proportions responsive */
+	width: 50%;
+  }
+
+  .grid-container div {
+	border-radius: 15px;
+  }
+
+  .griditem {
+	background-size: cover;
+	background-position: center;
+	padding: 2vw;
+	font-size: 1.5vw; /* text overlay*/
+	color: darkorange;
+	box-sizing: border-box;
+  }
+  .griditem:hover {
+	cursor: pointer;
+	filter: brightness(70%) grayscale(100%);
+  }
+  /* set background images*/
+  .image1 {
+	background-image: url("https://images.pexels.com/photos/707676/pexels-photo-707676.jpeg");
+	/*grid-area: image1;*/
+	z-index: 5;
+  }
+  .image2 {
+	background-image: url("../images/t_shirt_two.jpeg");
+	/*grid-area: image2;*/
+	grid-row: 1 / 3;
+	grid-column: 2;
+  }
+  .image3 {
+	background-image: url("https://images.pexels.com/photos/6948647/pexels-photo-6948647.jpeg");
+	z-index: 5;
+}
+
+  .main-three-h2 {
+	font-size: 60px;
+    letter-spacing: 0;
+    font-weight: 700;
+    font-family: 'Bingo', sans-serif;
+    letter-spacing: 2px;
+	color: var(--text);
+	line-height: 1.3;
+  }
+
+  .container-h5-one {
+	border-radius: 45px;
+	border: 2px solid var(--secondary);
+	width: 45%;
+	text-align: center;
+	position: relative;
+  }
+
+  .container-h5-one::before {
+	content: "";
+	position: absolute;
+	top: 50%; /* Adjust as needed */
+	left: calc(100% + 2px); /* Adjust the distance from the border to the dot */
+	width: 4px; /* Adjust the width of the dot */
+	height: 8px; /* Adjust the height of the dot */
+	background-color: var(--accent-600); /* Adjust the color of the dot */
+	border-bottom-right-radius: 8px; /* Half of the height */
+	border-top-right-radius: 8px; /* Half of the height */
+	transform: translateY(-40%); /* Vertically center the dot */
+	z-index: 2;
+}
+
+  .container-h5-one::after {
+	content: "";
+	position: absolute;
+	top: 50%; /* Adjust as needed */
+	left: 100%; /* Adjust the distance from the border to the line */
+	width: calc(100% + 120px); /* Adjust the length of the line */
+	height: 2px; /* Adjust the thickness of the line */
+	background-color: var(--secondary); /* Adjust the color of the line */
+  }
+
+  .main-three-h5 {
+	padding: 5px;
+	color: var(--text);
+	font-size: 18px;
+  }
+
+  .container-h5-two {
+	border-radius: 45px;
+	border: 2px solid var(--secondary);
+	position: relative;
+  }
+
+  .container-h5-two::after {
+	content: "";
+	position: absolute;
+	top: 50%; /* Adjust as needed */
+	left: 100%; /* Adjust the distance from the border to the line */
+	width: calc(10%); /* Adjust the length of the line */
+	height: 2px; /* Adjust the thickness of the line */
+	background-color: var(--secondary);
+  }
+
+  .main-three-h5-two {
+	padding: 25px;
+	color: var(--text);
+	line-height: 1.6;
+  }
+
+  .h2-span-one {
+	letter-spacing: 11px;
+  }
+
+  .h2-span-two {
+	color: var(--accent-600);
+  }
+
+  .printing-container {
+	width: 100%;
+  }
+
+  .printing-container h2 {
+	font-size: 50px !important;
+	color: var(--text) !important;
+  }
+
+  .stretch-word {
+	letter-spacing: 3.5px;
+  }
+
+  .ecoImagesTwo {
+	width: 40%;
+	height: 40%;
+	margin-right: -26px;
+	color: var(--text) !important;
+  }
+
+
+  .text-wrapper h4 {
+	font-size: 16px;
+	font-family: sans-serif;
+	color: var(--text) !important;
+  }
+
+
+  .ecoImages {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
