@@ -902,7 +902,7 @@ h5 {
   }
   /* set background images*/
   .image1 {
-	background-image: url("https://images.pexels.com/photos/707676/pexels-photo-707676.jpeg");
+	background-image: url("../images/t_shirt_hanger.jpeg");
 	/*grid-area: image1;*/
 	z-index: 5;
   }
@@ -913,7 +913,7 @@ h5 {
 	grid-column: 2;
   }
   .image3 {
-	background-image: url("https://images.pexels.com/photos/6948647/pexels-photo-6948647.jpeg");
+	background-image: url("../images/t_shirt_cartoon.jpeg");
 	z-index: 5;
 }
 
