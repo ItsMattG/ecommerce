@@ -4,14 +4,14 @@
 		<!-- Far Left -->
 		<div class="logo">
 			<div class="flex items-center">
-				<span class="text-lg font-bold nav-name mr-2">swifty</span>
+				<Link href="/"><span class="cursor-pointer text-lg font-bold nav-name mr-2">swifty</span></Link>
 			</div>
 		</div>
 
 		<!-- Center -->
 		<div class="menu">
-			<a href="#" class="small-nav-name">Home</a>
-			<a href="#" class="small-nav-name">Women</a>
+			<Link href="/" class="cursor-pointer small-nav-name">Home</Link>
+			<Link href="/women" class="cursor-pointer small-nav-name">Women</Link>
 			<a href="#" class="small-nav-name">Men</a>
 			<a href="#" class="small-nav-name">Kids</a>
 		</div>
@@ -42,8 +42,12 @@
 
 
 <script>
+import { Link } from '@inertiajs/vue3'
 export default {
 	name: 'Navbar',
+	components: {
+		Link,
+	},
 	data() {
 		return {
 			isDarkTheme: false
