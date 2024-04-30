@@ -228,7 +228,7 @@ export default {
 	},
 	data() {
 		return {
-			activeIndex: '',
+			activeIndex: null,
 		};
 	},
 	watch: {
